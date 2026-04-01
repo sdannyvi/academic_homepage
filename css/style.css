@@ -1,0 +1,319 @@
+/*
+  Academic homepage styles for Dan Vilenchik @ BGU.
+  Domain: static marketing / lab site for GitHub Pages.
+  Update when branding, navigation, or layout requirements change.
+*/
+
+:root {
+  --bg: #eef1f6;
+  --surface: #ffffff;
+  --ink: #0f172a;
+  --muted: #475569;
+  --line: #cbd5e1;
+  --brand: #0c4a6e;
+  --brand-light: #0369a1;
+  --accent: #0d9488;
+  --accent-soft: rgba(13, 148, 136, 0.12);
+  --shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+  --radius: 10px;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --max: 920px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--bg);
+  background-image:
+    linear-gradient(180deg, rgba(12, 74, 110, 0.04) 0%, transparent 320px),
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(13, 148, 136, 0.15), transparent);
+  min-height: 100vh;
+}
+
+a {
+  color: var(--brand-light);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.site-header {
+  background: linear-gradient(135deg, #0c4a6e 0%, #0e7490 55%, #0f766e 100%);
+  color: #f8fafc;
+  padding: 0;
+  box-shadow: 0 4px 24px rgba(12, 74, 110, 0.35);
+}
+
+.site-header__inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem 0;
+}
+
+.site-title {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.25rem;
+}
+
+.site-sub {
+  font-size: 0.95rem;
+  opacity: 0.92;
+  margin: 0 0 1rem;
+  font-weight: 500;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(248, 250, 252, 0.2);
+}
+
+.nav a {
+  color: #e0f2fe;
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.nav a[aria-current="page"] {
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+main {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3.5rem;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(203, 213, 225, 0.6);
+  margin-bottom: 1.5rem;
+}
+
+.card h1,
+.card h2 {
+  font-family: var(--font-serif);
+  margin-top: 0;
+}
+
+.card h1 {
+  font-size: 1.85rem;
+  letter-spacing: -0.02em;
+  color: var(--brand);
+}
+
+.card h2 {
+  font-size: 1.35rem;
+  color: #134e4a;
+  margin-bottom: 0.75rem;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+.contact-grid {
+  display: grid;
+  gap: 0.5rem 1.5rem;
+  margin: 1.25rem 0;
+  font-size: 0.98rem;
+}
+
+@media (min-width: 520px) {
+  .contact-grid {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+.contact-grid dt {
+  font-weight: 600;
+  color: var(--brand);
+}
+
+.contact-grid dd {
+  margin: 0;
+}
+
+.tagline {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn--primary {
+  background: var(--brand);
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(12, 74, 110, 0.35);
+}
+
+.btn--primary:hover {
+  background: #075985;
+  color: #fff !important;
+}
+
+.btn--ghost {
+  background: var(--surface);
+  color: var(--brand) !important;
+  border-color: var(--line);
+}
+
+.btn--ghost:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+.project {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.project:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.project h3 {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  margin: 0 0 0.5rem;
+  color: var(--brand);
+}
+
+.lab-member {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.lab-member:last-child {
+  border-bottom: none;
+}
+
+.lab-member__name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+
+.lab-member__meta {
+  font-size: 0.88rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.lab-member__topic {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pub-list li {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.95rem;
+}
+
+.pub-list li:last-child {
+  border-bottom: none;
+}
+
+.course-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.course-list li {
+  margin-bottom: 0.5rem;
+}
+
+.site-footer {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+}
+
+.site-footer a {
+  color: var(--muted);
+}
+
+.note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 1rem;
+}
