@@ -6,7 +6,7 @@
     <title>Research Projects — Dan Vilenchik</title>
     <meta
       name="description"
-      content="Research themes: voice biomarkers, GNNs and combinatorial learning, NLP and stance, high-dimensional statistics, interdisciplinary applications."
+      content="Research projects: high-dimensional learning, theory and ML, voice and mental health, healthcare AI, social systems, NLP."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,76 +36,181 @@
     <main>
       <article class="card">
         <span class="tagline">Research</span>
-        <h1>Projects &amp; themes</h1>
+        <h1>Research projects</h1>
         <p class="lead">
-          Active directions in the lab, aligned with ongoing grants and student theses. For full
-          publication lists see
+          Themes below are ordered for the site (5–6 first, then 1–4). For the full bibliography see
           <a href="publications.html">Publications</a> or the
           <a href="assets/Academic_CV_Vilenchik.pdf">CV (PDF)</a>.
         </p>
 
         <section class="project">
-          <h3>Voice as a biomarker for mental health</h3>
-          <p>
-            With clinical and social-work partners we collect voice data and build machine learning
-            pipelines to study depression and related conditions from acoustic features. Current ISF
-            work tests robustness: can proposed voice-based signals resist intentional manipulation
-            (“faking”)? Related translation effort:
-            <strong>Voxwell</strong>, exploring real-world deployment of voice technology.
+          <h3>5. Modeling human behavior &amp; social systems</h3>
+          <p class="project__tagline">
+            Interpretable axes for activity, feedback, and deliberation in large and small social
+            systems.
           </p>
+          <span class="project__overview-title">Overview</span>
+          <p>
+            We develop computational frameworks to understand <strong>structured human behavior</strong> in
+            social, digital, and organizational systems. A key concept is
+            <em>semantic dimension analysis</em>, extending classical dimensionality reduction into
+            interpretable behavioral axes. Applications include social networks, online learning,
+            gaming, and collective decision-making.
+          </p>
+          <span class="project__pubs-title">Selected publications</span>
+          <ul>
+            <li>
+              <em>Predicting churn in online games by quantifying diversity of engagement</em> (Big
+              Data, 2023)
+            </li>
+            <li>
+              <em>Beyond the echo chamber: Modelling open-mindedness in citizens’ assemblies</em>
+              (AAMAS, 2025 / journal 2024)
+            </li>
+            <li>
+              <em>The million tweets fallacy: Activity and feedback are uncorrelated</em> (ICWSM,
+              2018)
+            </li>
+          </ul>
         </section>
 
         <section class="project">
-          <h3>Graph neural networks &amp; combinatorial reasoning</h3>
-          <p>
-            We study how GNNs internalize classical algorithmic ideas (e.g., support in
-            satisfiability) and how that informs Max-Clique, sparse PCA, and related problems—connecting
-            deep models to handcrafted combinatorial structure.
+          <h3>6. NLP, language, and affective computing</h3>
+          <p class="project__tagline">
+            Graphs, stance, and semantics—interpretable structure before scale alone.
           </p>
+          <span class="project__overview-title">Overview</span>
+          <p>
+            This research explores how <strong>structure, semantics, and affect interact in language</strong>,
+            with an emphasis on interpretable models. The work combines graph-based representations
+            with linguistic signals to model stance, sentiment, and discourse without relying solely on
+            large black-box models.
+          </p>
+          <span class="project__pubs-title">Selected publications</span>
+          <ul>
+            <li>
+              <em>Acquired taste: Multimodal stance detection with textual and structural embeddings</em>
+              (COLING, 2025)
+            </li>
+            <li>
+              <em>STEM: Unsupervised structural embedding for stance detection</em> (AAAI, 2022)
+            </li>
+            <li>
+              <em>Harald: Augmenting hate speech data sets with real data</em> (EMNLP, 2022)
+            </li>
+          </ul>
         </section>
 
         <section class="project">
-          <h3>High-dimensional data &amp; feature selection</h3>
-          <p>
-            We analyze when structure can be recovered in spiked models and sparse PCA, and we
-            critically examine benchmark datasets for feature selection—many widely used sets are
-            easier than theory-focused “hard” regimes suggest.
+          <h3>1. High-dimensional learning &amp; feature selection</h3>
+          <p class="project__tagline">
+            Sparse structure, honest benchmarks, and when “hard” high-dimensional problems are
+            easy.
           </p>
+          <span class="project__overview-title">Overview</span>
+          <p>
+            We study how to extract meaningful structure from <strong>high-dimensional data</strong>, focusing
+            on sparse representations and feature selection. A key contribution is a dataset hardness
+            taxonomy showing that many benchmarks are trivial, enabling more principled and
+            interpretable evaluation on truly challenging cases.
+          </p>
+          <span class="project__pubs-title">Selected publications</span>
+          <ul>
+            <li>
+              <em>Choosing the right dataset: Hardness criteria for feature selection benchmarking</em>
+              (Knowledge-Based Systems, 2025)
+            </li>
+            <li>
+              <em>A greedy anytime algorithm for sparse PCA</em> (COLT, 2020)
+            </li>
+            <li>
+              <em>Learning to rank: How GNNs solve Max-Clique and Sparse PCA</em> (AAAI, 2026)
+            </li>
+          </ul>
         </section>
 
         <section class="project">
-          <h3>Semantic structure in social &amp; mobility data</h3>
-          <p>
-            “Semantic dimension” analysis extends PCA-style thinking to interpretable axes in social
-            platforms (e.g., activity vs. feedback). With large-scale mobility and socio-economic data
-            we study how latent factors separate—and what that means for policy design.
+          <h3>2. Theory meets machine learning (algorithms &amp; graphs)</h3>
+          <p class="project__tagline">
+            What classical combinatorics reveals about neural nets on SAT, coloring, and cliques.
           </p>
+          <span class="project__overview-title">Overview</span>
+          <p>
+            This project bridges <strong>theoretical computer science and modern machine learning</strong>,
+            focusing on how learning systems solve combinatorial problems. The goal is to uncover the
+            structural principles that enable neural networks to succeed on tasks such as SAT,
+            Max-Clique, and graph optimization.
+          </p>
+          <span class="project__pubs-title">Selected publications</span>
+          <ul>
+            <li>
+              <em>Concept learning for algorithmic reasoning: Insights from SAT-solving GNNs</em>
+              (Information Sciences, 2026)
+            </li>
+            <li>
+              <em>Learning to rank: How GNNs solve Max-Clique and Sparse PCA</em> (AAAI, 2026, oral)
+            </li>
+            <li>
+              <em>Chasing the k-colorability threshold</em> (FOCS, 2013)
+            </li>
+          </ul>
         </section>
 
         <section class="project">
-          <h3>NLP: stance, augmentation, and multimodal models</h3>
-          <p>
-            Unsupervised structural embeddings for stance detection; hate-speech data augmentation;
-            multimodal stance with textual and structural cues—bridging geometry, graphs, and text.
+          <h3>3. Voice-based mental health detection</h3>
+          <p class="project__tagline">
+            Acoustic biomarkers for depression—robustness, protocol, and clinical translation.
           </p>
+          <span class="project__overview-title">Overview</span>
+          <p>
+            We study whether human voice can serve as a <strong>robust, non-invasive biomarker for mental
+            health</strong>, focusing on depression and related conditions. The work combines clinical data
+            collection with machine learning pipelines designed for real-world deployment. A central
+            challenge is distinguishing true biomarkers from superficial correlations, and ensuring
+            robustness to domain shifts and manipulation.
+          </p>
+          <span class="project__pubs-title">Selected publications</span>
+          <ul>
+            <li>
+              <em>Method matters: Enhancing voice-based depression detection with a new data collection
+              framework</em> (Depression &amp; Anxiety, 2025)
+            </li>
+            <li>
+              <em>A case-specific psychological first aid AI recommendations app for rescue and first
+              responders</em> (European Journal of Psychotraumatology, 2025)
+            </li>
+            <li>
+              <em>Assessment of voice markers of depression during crisis settings</em>
+            </li>
+          </ul>
         </section>
 
         <section class="project">
-          <h3>Deliberation &amp; multi-agent systems</h3>
-          <p>
-            Modeling Citizens’ Assemblies and related settings with formal criteria for deliberation
-            quality, including open-mindedness and opinion dynamics on real assembly data.
+          <h3>4. AI for healthcare &amp; social impact</h3>
+          <p class="project__tagline">
+            Interpretable models for welfare, veterinary medicine, and molecular design.
           </p>
-        </section>
-
-        <section class="project">
-          <h3>Interdisciplinary collaborations</h3>
+          <span class="project__overview-title">Overview</span>
           <p>
-            Projects span digital humanities and literary networks, psychological first aid and
-            welfare-related AI, nuclear-instrument signal processing, poultry genotyping pipelines,
-            and clinical voice studies (e.g., thyroid, diabetes)—always with a clear ML methodology
-            core.
+            This line of work develops <strong>human-centered AI systems</strong> for high-stakes environments
+            such as healthcare and welfare. The focus is on interpretable, clinically aligned models
+            that support decision-making, including early detection of risk and scalable interventions.
           </p>
+          <span class="project__pubs-title">Selected publications</span>
+          <ul>
+            <li>
+              <em>A case-specific psychological first aid AI recommendations app for rescue and first
+              responders</em> (European Journal of Psychotraumatology, 2025)
+            </li>
+            <li>
+              <em>Fast, accurate, and cost-effective poultry sex genotyping using ML</em> (Frontiers in
+              Veterinary Science, 2023)
+            </li>
+            <li>
+              <em>Moloptimizer: A molecular optimization toolkit for fragment-based drug design</em>
+              (Molecules, 2024)
+            </li>
+          </ul>
         </section>
       </article>
     </main>
