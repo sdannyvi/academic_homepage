@@ -170,26 +170,6 @@ main {
   margin: 0;
 }
 
-.tagline {
-  display: inline-block;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-weight: 700;
-  color: var(--accent);
-  margin-bottom: 0.5rem;
-}
-
-/* Long lab title: keep sentence case for readability */
-.tagline--long {
-  text-transform: none;
-  letter-spacing: 0.03em;
-  font-size: 0.82rem;
-  font-weight: 600;
-  line-height: 1.35;
-  max-width: 36rem;
-}
-
 .btn-row {
   display: flex;
   flex-wrap: wrap;
