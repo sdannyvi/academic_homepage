@@ -317,3 +317,50 @@ main {
   font-style: italic;
   margin-top: 1rem;
 }
+
+/* Profile photo (same asset as Google Sites homepage) */
+.profile-intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.profile-figure {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+.profile-photo {
+  display: block;
+  width: min(220px, 38vw);
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 28px rgba(12, 74, 110, 0.2);
+  border: 3px solid rgba(255, 255, 255, 0.95);
+}
+
+.profile-intro__text {
+  flex: 1 1 280px;
+  min-width: 0;
+}
+
+.profile-intro h1 {
+  margin-top: 0;
+}
+
+.family-history {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.family-history h2 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: #134e4a;
+  margin-bottom: 0.5rem;
+}
