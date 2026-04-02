@@ -58,10 +58,15 @@
         width: 124px;
         height: 124px;
         object-fit: cover;
+        object-position: center center;
         border-radius: 10px;
         flex-shrink: 0;
         border: 1px solid var(--line, #cbd5e1);
         background: #f8fafc;
+      }
+      /* Anchor toward top of source image so hair is not cropped (tall portraits in square box) */
+      .lab-member__avatar--focus-top {
+        object-position: center top;
       }
       .lab-member__text {
         flex: 1;
@@ -230,7 +235,7 @@
         </div>
         <div class="lab-member">
           <img
-            class="lab-member__avatar"
+            class="lab-member__avatar lab-member__avatar--focus-top"
             src="assets/student_pics/kobi_kenzi.jpeg"
             width="765"
             height="1029"
