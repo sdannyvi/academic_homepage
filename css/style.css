@@ -164,10 +164,12 @@ main {
 .contact-grid dt {
   font-weight: 600;
   color: var(--brand);
+  align-self: center;
 }
 
 .contact-grid dd {
   margin: 0;
+  align-self: center;
 }
 
 .contact-profile-icons {
