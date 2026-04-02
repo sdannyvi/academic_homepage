@@ -339,22 +339,23 @@ main {
   margin-bottom: 0.5rem;
 }
 
-/* Full-width strip below main content (home only) */
+/* Full-width strip below main content (home only); short height crops from top (sky) */
 .home-bottom-banner {
   width: 100%;
   margin: 0;
   padding: 0;
   line-height: 0;
   overflow: hidden;
+  height: clamp(32px, 5.5vw, 52px);
 }
 
 .home-bottom-banner img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  min-height: 100%;
   display: block;
-  vertical-align: bottom;
   object-fit: cover;
-  object-position: center center;
+  object-position: bottom center;
 }
 
 .site-footer {
