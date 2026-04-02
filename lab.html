@@ -27,8 +27,20 @@
         padding-top: 1.25rem;
         border-top: 1px solid var(--line, #cbd5e1);
       }
-      .lab-roster .lab-member:last-child {
+      .lab-roster > .lab-member:last-of-type {
         border-bottom: none;
+      }
+      .lab-degree-heading {
+        font-family: var(--font-serif, Georgia, serif);
+        font-size: 1.1rem;
+        color: #134e4a;
+        margin: 0 0 0.25rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--line, #cbd5e1);
+      }
+      .lab-degree-heading:first-of-type {
+        padding-top: 0;
+        border-top: none;
       }
       .lab-roster .lab-member {
         display: flex;
@@ -96,22 +108,7 @@
         </div>
 
         <div class="lab-roster">
-        <div class="lab-member">
-          <img
-            class="lab-member__avatar"
-            src="assets/male_phd.png"
-            width="749"
-            height="910"
-            alt=""
-            decoding="async"
-            loading="lazy"
-          />
-          <div class="lab-member__text">
-            <div class="lab-member__name">Elad Shoham</div>
-            <div class="lab-member__meta">Ph.D.</div>
-          </div>
-        </div>
-
+        <h2 class="lab-degree-heading">Ph.D.</h2>
         <div class="lab-member">
           <img
             class="lab-member__avatar"
@@ -124,22 +121,6 @@
           />
           <div class="lab-member__text">
             <div class="lab-member__name">Itamar Elmakias</div>
-            <div class="lab-member__meta">Ph.D.</div>
-          </div>
-        </div>
-
-        <div class="lab-member">
-          <img
-            class="lab-member__avatar"
-            src="assets/female_phd.png"
-            width="758"
-            height="973"
-            alt=""
-            decoding="async"
-            loading="lazy"
-          />
-          <div class="lab-member__text">
-            <div class="lab-member__name">Chanel Michaeli</div>
             <div class="lab-member__meta">Ph.D.</div>
           </div>
         </div>
@@ -177,6 +158,55 @@
             <div class="lab-member__meta">Ph.D. · co-advised with Julie Cwikel</div>
           </div>
         </div>
+
+        <div class="lab-member">
+          <img
+            class="lab-member__avatar"
+            src="assets/female_phd.png"
+            width="758"
+            height="973"
+            alt=""
+            decoding="async"
+            loading="lazy"
+          />
+          <div class="lab-member__text">
+            <div class="lab-member__name">Chanel Michaeli</div>
+            <div class="lab-member__meta">Ph.D.</div>
+          </div>
+        </div>
+
+        <div class="lab-member">
+          <img
+            class="lab-member__avatar"
+            src="assets/male_phd.png"
+            width="749"
+            height="910"
+            alt=""
+            decoding="async"
+            loading="lazy"
+          />
+          <div class="lab-member__text">
+            <div class="lab-member__name">Elad Shoham</div>
+            <div class="lab-member__meta">Ph.D.</div>
+          </div>
+        </div>
+
+        <h2 class="lab-degree-heading">M.Sc.</h2>
+        <div class="lab-member">
+          <img
+            class="lab-member__avatar"
+            src="assets/male_phd.png"
+            width="749"
+            height="910"
+            alt=""
+            decoding="async"
+            loading="lazy"
+          />
+          <div class="lab-member__text">
+            <div class="lab-member__name">Moshe Braunstein</div>
+            <div class="lab-member__meta">M.Sc. · co-advised with Ilana Niski</div>
+          </div>
+        </div>
         <div class="lab-member">
           <img
             class="lab-member__avatar"
@@ -203,11 +233,10 @@
             loading="lazy"
           />
           <div class="lab-member__text">
-            <div class="lab-member__name">Zohar Zamir</div>
+            <div class="lab-member__name">Kobi Kenzi</div>
             <div class="lab-member__meta">M.Sc.</div>
           </div>
         </div>
-
         <div class="lab-member">
           <img
             class="lab-member__avatar"
@@ -219,22 +248,7 @@
             loading="lazy"
           />
           <div class="lab-member__text">
-            <div class="lab-member__name">Gal Shubeli</div>
-            <div class="lab-member__meta">M.Sc. · co-advised with Tal Golan</div>
-          </div>
-        </div>
-        <div class="lab-member">
-          <img
-            class="lab-member__avatar"
-            src="assets/male_phd.png"
-            width="749"
-            height="910"
-            alt=""
-            decoding="async"
-            loading="lazy"
-          />
-          <div class="lab-member__text">
-            <div class="lab-member__name">Omri Rafaeli</div>
+            <div class="lab-member__name">Josh Lorch</div>
             <div class="lab-member__meta">M.Sc.</div>
           </div>
         </div>
@@ -264,11 +278,25 @@
             loading="lazy"
           />
           <div class="lab-member__text">
-            <div class="lab-member__name">Shaked David Vaknin</div>
+            <div class="lab-member__name">Omri Rafaeli</div>
             <div class="lab-member__meta">M.Sc.</div>
           </div>
         </div>
-
+        <div class="lab-member">
+          <img
+            class="lab-member__avatar"
+            src="assets/female_phd.png"
+            width="758"
+            height="973"
+            alt=""
+            decoding="async"
+            loading="lazy"
+          />
+          <div class="lab-member__text">
+            <div class="lab-member__name">Yuval Ratzabi</div>
+            <div class="lab-member__meta">M.Sc.</div>
+          </div>
+        </div>
         <div class="lab-member">
           <img
             class="lab-member__avatar"
@@ -295,8 +323,8 @@
             loading="lazy"
           />
           <div class="lab-member__text">
-            <div class="lab-member__name">Moshe Braunstein</div>
-            <div class="lab-member__meta">M.Sc. · co-advised with Ilana Niski</div>
+            <div class="lab-member__name">Gal Shubeli</div>
+            <div class="lab-member__meta">M.Sc. · co-advised with Tal Golan</div>
           </div>
         </div>
         <div class="lab-member">
@@ -310,7 +338,7 @@
             loading="lazy"
           />
           <div class="lab-member__text">
-            <div class="lab-member__name">Josh Lorch</div>
+            <div class="lab-member__name">Shaked David Vaknin</div>
             <div class="lab-member__meta">M.Sc.</div>
           </div>
         </div>
@@ -325,22 +353,7 @@
             loading="lazy"
           />
           <div class="lab-member__text">
-            <div class="lab-member__name">Kobi Kenzi</div>
-            <div class="lab-member__meta">M.Sc.</div>
-          </div>
-        </div>
-        <div class="lab-member">
-          <img
-            class="lab-member__avatar"
-            src="assets/female_phd.png"
-            width="758"
-            height="973"
-            alt=""
-            decoding="async"
-            loading="lazy"
-          />
-          <div class="lab-member__text">
-            <div class="lab-member__name">Yuval Ratzabi</div>
+            <div class="lab-member__name">Zohar Zamir</div>
             <div class="lab-member__meta">M.Sc.</div>
           </div>
         </div>
