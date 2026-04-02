@@ -376,7 +376,7 @@ main {
 
 .profile-photo {
   display: block;
-  width: min(220px, 38vw);
+  width: min(317px, calc(38vw * 1.44));
   max-width: 100%;
   height: auto;
   border-radius: 12px;
