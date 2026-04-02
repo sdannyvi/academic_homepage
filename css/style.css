@@ -150,7 +150,7 @@ main {
 
 .contact-grid {
   display: grid;
-  gap: 0.35rem 1.5rem;
+  gap: 0.5rem 1.5rem;
   margin: 1.25rem 0;
   font-size: 0.98rem;
 }
@@ -172,16 +172,17 @@ main {
   align-self: center;
 }
 
-/* Pull Profiles row up toward Phone (grid row-gap alone leaves too much air). */
-.contact-grid__profiles {
-  margin-top: -2.5rem;
+/* Pull Profiles row slightly closer to Phone (tighter than uniform row-gap). */
+.contact-grid dt:nth-child(7),
+.contact-grid dd:nth-child(8) {
+  margin-top: -1.3rem;
 }
 
 .contact-profile-icons {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .contact-profile-icons__link {
@@ -201,11 +202,11 @@ main {
 }
 
 .contact-profile-icons__img--orcid {
-  height: 1rem;
+  height: 1.361rem;
 }
 
 .contact-profile-icons__img--linkedin {
-  height: 2.75rem;
+  height: 4.4rem;
 }
 
 .btn-row {
