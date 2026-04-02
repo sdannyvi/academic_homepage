@@ -27,8 +27,14 @@
         padding-top: 1.25rem;
         border-top: 1px solid var(--line, #cbd5e1);
       }
-      .lab-roster > .lab-member:last-of-type {
+      .lab-roster > .lab-member:last-of-type,
+      .lab-alumni > .lab-member:last-of-type {
         border-bottom: none;
+      }
+      .lab-alumni {
+        margin-top: 1.25rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--line, #cbd5e1);
       }
       .lab-degree-heading {
         font-family: var(--font-serif, Georgia, serif);
@@ -323,6 +329,21 @@
             loading="lazy"
           />
           <div class="lab-member__text">
+            <div class="lab-member__name">Matan Shapira</div>
+            <div class="lab-member__meta">M.Sc.</div>
+          </div>
+        </div>
+        <div class="lab-member">
+          <img
+            class="lab-member__avatar"
+            src="assets/male_phd.png"
+            width="749"
+            height="910"
+            alt=""
+            decoding="async"
+            loading="lazy"
+          />
+          <div class="lab-member__text">
             <div class="lab-member__name">Gal Shubeli</div>
             <div class="lab-member__meta">M.Sc. · co-advised with Tal Golan</div>
           </div>
@@ -357,6 +378,25 @@
             <div class="lab-member__meta">M.Sc.</div>
           </div>
         </div>
+        </div>
+
+        <div class="lab-alumni">
+          <h2 class="lab-degree-heading">Alumni</h2>
+          <div class="lab-member">
+            <img
+              class="lab-member__avatar"
+              src="assets/male_phd.png"
+              width="749"
+              height="910"
+              alt=""
+              decoding="async"
+              loading="lazy"
+            />
+            <div class="lab-member__text">
+              <div class="lab-member__name">Omer Vanon</div>
+              <div class="lab-member__meta">M.Sc.</div>
+            </div>
+          </div>
         </div>
 
         <p class="note">
