@@ -339,6 +339,24 @@ main {
   margin-bottom: 0.5rem;
 }
 
+/* Full-width strip below main content (home only) */
+.home-bottom-banner {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.home-bottom-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: bottom;
+  object-fit: cover;
+  object-position: center center;
+}
+
 .site-footer {
   max-width: var(--max);
   margin: 0 auto;
