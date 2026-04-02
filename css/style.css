@@ -172,6 +172,12 @@ main {
   align-self: center;
 }
 
+/* Pull Profiles row slightly closer to Phone (tighter than uniform row-gap). */
+.contact-grid dt:nth-child(7),
+.contact-grid dd:nth-child(8) {
+  margin-top: -1.3rem;
+}
+
 .contact-profile-icons {
   display: flex;
   flex-wrap: wrap;
@@ -196,11 +202,11 @@ main {
 }
 
 .contact-profile-icons__img--orcid {
-  height: 2.1rem;
+  height: 1.361rem;
 }
 
 .contact-profile-icons__img--linkedin {
-  height: 5.5rem;
+  height: 4.4rem;
 }
 
 .btn-row {
