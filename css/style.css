@@ -170,15 +170,35 @@ main {
   margin: 0;
 }
 
-.contact-grid__linkedin {
+.contact-profile-icons {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 1.5rem;
 }
 
-.contact-linkedin-dt-logo {
+.contact-profile-icons__link {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.contact-profile-icons__link:hover {
+  opacity: 0.88;
+}
+
+/* Larger wordmarks; distinct heights keep both readable side by side */
+.contact-profile-icons__img {
   display: block;
-  height: 1.15rem;
   width: auto;
+}
+
+.contact-profile-icons__img--orcid {
+  height: 3rem;
+}
+
+.contact-profile-icons__img--linkedin {
+  height: 2.75rem;
 }
 
 .btn-row {
