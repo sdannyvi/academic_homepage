@@ -170,6 +170,18 @@ main {
   margin: 0;
 }
 
+.contact-linkedin {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.contact-linkedin__logo {
+  display: block;
+  height: 1.35rem;
+  width: auto;
+}
+
 .btn-row {
   display: flex;
   flex-wrap: wrap;
