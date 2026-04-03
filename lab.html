@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
     <title>People — Dan Vilenchik</title>
     <meta
       name="description"
@@ -73,6 +76,16 @@
         min-width: 0;
         display: grid;
         gap: 0.35rem;
+      }
+      @media (max-width: 640px) {
+        .lab-roster .lab-member {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .lab-member__avatar {
+          width: 112px;
+          height: 112px;
+        }
       }
     </style>
   </head>
