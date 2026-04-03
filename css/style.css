@@ -183,10 +183,12 @@ main {
   align-self: center;
 }
 
-/* Pull Profiles row slightly closer to Phone (tighter than uniform row-gap). */
-.contact-grid dt:nth-child(7),
-.contact-grid dd:nth-child(8) {
-  margin-top: -1.3rem;
+/* Pull Profiles row toward Phone on wide layout only (two columns). Narrow: extra space via rules below. */
+@media (min-width: 641px) {
+  .contact-grid__profiles-label,
+  .contact-grid__profiles-dd {
+    margin-top: -1.3rem;
+  }
 }
 
 .contact-profile-icons {
@@ -565,6 +567,17 @@ main {
   .contact-profile-icons {
     gap: 1rem;
     justify-content: flex-start;
+  }
+}
+
+/* Single-column contact grid only: clear gap between phone and Profiles (portrait phones) */
+@media (max-width: 519px) {
+  .contact-grid__profiles-label {
+    margin-top: 1.35rem;
+  }
+
+  .contact-grid__profiles-dd {
+    margin-top: 0;
   }
 }
 
