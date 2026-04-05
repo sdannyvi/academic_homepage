@@ -75,6 +75,10 @@
       .lab-member__avatar--focus-balance {
         object-position: center 32%;
       }
+      /* Wide shots with subject on the right; keeps top headroom in square crop */
+      .lab-member__avatar--focus-right {
+        object-position: 76% 24%;
+      }
       .lab-member__text {
         flex: 1;
         min-width: 0;
@@ -456,17 +460,28 @@
         </div>
         <div class="lab-member">
           <img
-            class="lab-member__avatar"
-            src="assets/male_phd.png"
-            width="749"
-            height="910"
-            alt=""
+            class="lab-member__avatar lab-member__avatar--focus-right"
+            src="assets/student_pics/zohar_zamir.jpeg"
+            width="1103"
+            height="1656"
+            alt="Zohar Zamir"
             decoding="async"
             loading="lazy"
           />
           <div class="lab-member__text">
             <div class="lab-member__name">Zohar Zamir</div>
             <div class="lab-member__meta">M.Sc.</div>
+            <p class="lab-member__topic">
+              My research focuses on detecting depression from speech using machine learning, generative AI,
+              and multi-modal approaches. I develop methods that leverage physiological acoustic signals and
+              synthetic data generation to improve the robustness and reliability of AI-based mental health
+              assessment systems.
+            </p>
+            <p class="lab-member__topic">
+              I&apos;m excited by the potential to make mental health assessment more accessible and
+              objective, and by the challenge of building reliable AI systems in real-world, data-limited
+              clinical settings using advanced generative and multi-modal models.
+            </p>
           </div>
         </div>
         </div>
