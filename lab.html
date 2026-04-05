@@ -71,6 +71,10 @@
       .lab-member__avatar--focus-top {
         object-position: center top;
       }
+      /* Between top and center: keeps some headroom while avoiding chin clipped at bottom of square */
+      .lab-member__avatar--focus-balance {
+        object-position: center 32%;
+      }
       .lab-member__text {
         flex: 1;
         min-width: 0;
@@ -265,7 +269,7 @@
         </div>
         <div class="lab-member">
           <img
-            class="lab-member__avatar lab-member__avatar--focus-top"
+            class="lab-member__avatar lab-member__avatar--focus-balance"
             src="assets/student_pics/tuvia_hausdorf.jpeg"
             width="535"
             height="766"
