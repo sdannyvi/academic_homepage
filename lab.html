@@ -79,6 +79,10 @@
       .lab-member__avatar--focus-right {
         object-position: 76% 24%;
       }
+      /* Face-forward crop for tall portraits (less sky / background, more face in the square) */
+      .lab-member__avatar--focus-face {
+        object-position: center 42%;
+      }
       .lab-member__text {
         flex: 1;
         min-width: 0;
@@ -143,17 +147,29 @@
         <h2 class="lab-degree-heading">Ph.D.</h2>
         <div class="lab-member">
           <img
-            class="lab-member__avatar"
-            src="assets/male_phd.png"
-            width="749"
-            height="910"
-            alt=""
+            class="lab-member__avatar lab-member__avatar--focus-face"
+            src="assets/student_pics/itamar_elmakias.jpeg"
+            width="896"
+            height="1195"
+            alt="Itamar Elmakias"
             decoding="async"
             loading="lazy"
           />
           <div class="lab-member__text">
             <div class="lab-member__name">Itamar Elmakias</div>
             <div class="lab-member__meta">Ph.D.</div>
+            <p class="lab-member__topic">
+              My research focuses on feature selection and dataset hardness, with the goal of understanding
+              when datasets are genuinely hard and how this should shape algorithm selection. I study
+              trade-offs such as runtime, supervision requirements, adoption complexity, and algorithm
+              family, and aim to develop automated pipelines for recommending the most suitable method for
+              a new dataset.
+            </p>
+            <p class="lab-member__topic">
+              I&apos;m excited by the challenge of transforming a confusing empirical landscape into clear
+              decision rules, and by combining theory, large-scale benchmarking, and automation to make
+              algorithm selection more intelligent.
+            </p>
           </div>
         </div>
 
@@ -204,17 +220,27 @@
 
         <div class="lab-member">
           <img
-            class="lab-member__avatar"
-            src="assets/female_phd.png"
-            width="758"
-            height="973"
-            alt=""
+            class="lab-member__avatar lab-member__avatar--focus-balance"
+            src="assets/student_pics/chanel_michaeli.jpeg"
+            width="1436"
+            height="2048"
+            alt="Chanel Michaeli"
             decoding="async"
             loading="lazy"
           />
           <div class="lab-member__text">
             <div class="lab-member__name">Chanel Michaeli</div>
             <div class="lab-member__meta">Ph.D. · co-advised with Dr. Havana Rika</div>
+            <p class="lab-member__topic">
+              My research focuses on affect-aware NLP, especially sarcasm detection and how emotional
+              signal distributions shift across datasets and domains. I study how models interpret subtle
+              human cues, irony, implicit sentiment, and other affective nuances, and how these signals can
+              be represented and generalized robustly.
+            </p>
+            <p class="lab-member__topic">
+              I&apos;m excited by the challenge of teaching machines to recognize the richness and ambiguity
+              of human communication.
+            </p>
           </div>
         </div>
 
