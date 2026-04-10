@@ -87,6 +87,11 @@
       .lab-member__avatar--focus-balance-roomy-top {
         object-position: center 17%;
       }
+      /* Entire photo visible inside the square (like zooming out vs. cover); neutral bands use avatar bg */
+      .lab-member__avatar--fit-contain {
+        object-fit: contain;
+        object-position: center center;
+      }
       .lab-member__text {
         flex: 1;
         min-width: 0;
@@ -379,17 +384,30 @@
         </div>
         <div class="lab-member">
           <img
-            class="lab-member__avatar"
-            src="assets/male_phd.png"
-            width="749"
-            height="910"
-            alt=""
+            class="lab-member__avatar lab-member__avatar--focus-balance"
+            src="assets/student_pics/rafi_michaeli.jpeg"
+            width="565"
+            height="600"
+            alt="Rafi Michaeli"
             decoding="async"
             loading="lazy"
           />
           <div class="lab-member__text">
             <div class="lab-member__name">Rafi Michaeli</div>
             <div class="lab-member__meta">M.Sc.</div>
+            <p class="lab-member__topic">
+              My research focuses on sarcasm detection in natural language, with an emphasis on improving
+              model robustness through synthetic data generation. I investigate how automatically generated
+              sarcastic utterances can augment existing datasets, enrich linguistic diversity, and improve
+              the training of machine learning models for more accurate sarcasm recognition across varied
+              contexts.
+            </p>
+            <p class="lab-member__topic">
+              I&apos;m excited by the challenge of teaching machines to recognize one of the most subtle
+              and nuanced forms of human communication, and by the potential of synthetic data generation to
+              overcome dataset limitations and unlock better language understanding in sarcasm-aware AI
+              systems.
+            </p>
           </div>
         </div>
         <div class="lab-member">
@@ -434,17 +452,27 @@
         </div>
         <div class="lab-member">
           <img
-            class="lab-member__avatar"
-            src="assets/female_phd.png"
-            width="758"
-            height="973"
-            alt=""
+            class="lab-member__avatar lab-member__avatar--fit-contain"
+            src="assets/student_pics/dolev_shaked.png"
+            width="316"
+            height="412"
+            alt="Dolev Shaked"
             decoding="async"
             loading="lazy"
           />
           <div class="lab-member__text">
             <div class="lab-member__name">Dolev Shaked</div>
             <div class="lab-member__meta">M.Sc. · co-advised with Prof. Carmel Sofer</div>
+            <p class="lab-member__topic">
+              My research focuses on facial expression recognition using a retrieval-augmented generation
+              (RAG) framework. The approach leverages pre-trained vision-language models to enable
+              training-free inference and address data scarcity.
+            </p>
+            <p class="lab-member__topic">
+              I am excited about leveraging automated tools for facial expression recognition to improve
+              people&apos;s well-being, as well as developing a data-efficient emotion recognition framework
+              to make these systems more accessible.
+            </p>
           </div>
         </div>
         <div class="lab-member">
