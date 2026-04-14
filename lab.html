@@ -92,6 +92,10 @@
         object-fit: contain;
         object-position: center center;
       }
+      /* Extra headroom at top while keeping the face large in the square (Omer Vanon) */
+      .lab-member__avatar--focus-roomy-face {
+        object-position: center 16%;
+      }
       .lab-member__text {
         flex: 1;
         min-width: 0;
@@ -582,17 +586,26 @@
           <h2 class="lab-degree-heading">Alumni</h2>
           <div class="lab-member">
             <img
-              class="lab-member__avatar"
-              src="assets/male_phd.png"
-              width="749"
-              height="910"
-              alt=""
+              class="lab-member__avatar lab-member__avatar--focus-roomy-face"
+              src="assets/student_pics/omer_vanon.jpeg"
+              width="846"
+              height="1132"
+              alt="Omer Vanon"
               decoding="async"
               loading="lazy"
             />
             <div class="lab-member__text">
               <div class="lab-member__name">Omer Vanon</div>
               <div class="lab-member__meta">M.Sc.</div>
+              <p class="lab-member__topic">
+                My research focused on developing deep learning and image segmentation models to identify
+                and analyze non-accidental pediatric burn injuries.
+              </p>
+              <p class="lab-member__topic">
+                I was able to apply my core knowledge in image processing to such critical fields as
+                forensic pediatrics, integrating applied machine learning to solve complex, domain-specific
+                diagnostic challenges.
+              </p>
             </div>
           </div>
         </div>
