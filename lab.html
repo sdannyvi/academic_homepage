@@ -96,6 +96,26 @@
       .lab-member__avatar--focus-roomy-face {
         object-position: center 16%;
       }
+      /* Square source photos: zoom inside a clip so the head dominates the thumbnail (Yuval Ratzabi) */
+      .lab-member__avatar-ring {
+        width: 124px;
+        height: 124px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid var(--line, #cbd5e1);
+        background: #f8fafc;
+      }
+      .lab-member__avatar-ring > .lab-member__avatar {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 0;
+        object-fit: cover;
+        object-position: center 28%;
+        transform: scale(1.4);
+        transform-origin: center 30%;
+      }
       .lab-member__text {
         flex: 1;
         min-width: 0;
@@ -108,6 +128,10 @@
           align-items: flex-start;
         }
         .lab-member__avatar {
+          width: 112px;
+          height: 112px;
+        }
+        .lab-member__avatar-ring {
           width: 112px;
           height: 112px;
         }
@@ -440,18 +464,31 @@
           </div>
         </div>
         <div class="lab-member">
-          <img
-            class="lab-member__avatar"
-            src="assets/female_phd.png"
-            width="758"
-            height="973"
-            alt=""
-            decoding="async"
-            loading="lazy"
-          />
+          <div class="lab-member__avatar-ring">
+            <img
+              class="lab-member__avatar"
+              src="assets/student_pics/yuval_ratzabi.jpeg"
+              width="856"
+              height="856"
+              alt="Yuval Ratzabi"
+              decoding="async"
+              loading="lazy"
+            />
+          </div>
           <div class="lab-member__text">
             <div class="lab-member__name">Yuval Ratzabi</div>
             <div class="lab-member__meta">M.Sc.</div>
+            <p class="lab-member__topic">
+              My research focuses on automatic depression detection from speech using machine learning on
+              real-world clinical audio data. I design end-to-end pipelines for audio processing, feature
+              extraction, and modeling, while addressing challenges such as domain variability and
+              generalization.
+            </p>
+            <p class="lab-member__topic">
+              I am particularly interested in identifying vocal features that carry meaningful signals of
+              depression, and in developing robust, scalable methods for real-world mental health
+              assessment.
+            </p>
           </div>
         </div>
         <div class="lab-member">
