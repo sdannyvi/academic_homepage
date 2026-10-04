@@ -88,6 +88,10 @@
       .lab-member__avatar--focus-balance-roomy-top {
         object-position: center 17%;
       }
+      /* Still more top headroom than roomy-top (Or Ben-Naim) */
+      .lab-member__avatar--focus-more-top {
+        object-position: center 6%;
+      }
       /* Entire photo visible inside the square (like zooming out vs. cover); neutral bands use avatar bg */
       .lab-member__avatar--fit-contain {
         object-fit: contain;
@@ -271,25 +275,27 @@
         <h2 class="lab-degree-heading">M.Sc.</h2>
         <div class="lab-member">
           <img
-            class="lab-member__avatar lab-member__avatar--focus-top"
-            src="assets/student_pics/kobi_kenzi.jpeg"
-            width="765"
-            height="1029"
-            alt="Kobi Kenzi"
+            class="lab-member__avatar lab-member__avatar--focus-more-top"
+            src="assets/student_pics/or_ben_naim.jpeg"
+            width="750"
+            height="1024"
+            alt="Or Ben-Naim"
             decoding="async"
             loading="lazy"
           />
           <div class="lab-member__text">
-            <div class="lab-member__name">Kobi Kenzi</div>
+            <div class="lab-member__name">Or Ben-Naim</div>
             <div class="lab-member__meta">M.Sc.</div>
             <p class="lab-member__topic">
-              My research focuses on causal inference for irregular clinical time-series, leveraging latent
-              variable modeling and domain-informed DAGs for confounder identification and CATE
-              estimation.
+              My research focuses on text style transfer for linguistically complex text, such as sarcasm:
+              rewriting a sentence in a new style while preserving its original meaning. I investigate
+              whether a lightweight architecture can reach competitive performance compared with large
+              language models.
             </p>
             <p class="lab-member__topic">
-              I&apos;m driven by the potential to improve real-world decisions in high-stakes domains like
-              healthcare.
+              I am excited by designing small models and evaluation pipelines for content preservation,
+              style accuracy, and fluency, and by the possibility that style-aware language technology can
+              be made more efficient and accessible.
             </p>
           </div>
         </div>
@@ -540,6 +546,30 @@
               <p class="lab-member__topic">
                 I&apos;m excited about turning messy, multimodal clinical data into something that can
                 meaningfully improve mental health assessment and real-world patient care.
+              </p>
+            </div>
+          </div>
+          <div class="lab-member">
+            <img
+              class="lab-member__avatar lab-member__avatar--focus-top"
+              src="assets/student_pics/kobi_kenzi.jpeg"
+              width="765"
+              height="1029"
+              alt="Kobi Kenzi"
+              decoding="async"
+              loading="lazy"
+            />
+            <div class="lab-member__text">
+              <div class="lab-member__name">Kobi Kenzi</div>
+              <div class="lab-member__meta">M.Sc.</div>
+              <p class="lab-member__topic">
+                My research focuses on causal inference for irregular clinical time-series, leveraging latent
+                variable modeling and domain-informed DAGs for confounder identification and CATE
+                estimation.
+              </p>
+              <p class="lab-member__topic">
+                I&apos;m driven by the potential to improve real-world decisions in high-stakes domains like
+                healthcare.
               </p>
             </div>
           </div>
